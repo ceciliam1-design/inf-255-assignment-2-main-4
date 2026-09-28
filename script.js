@@ -72,7 +72,12 @@ function getName(animal) {
 // ---------------------------------------------------------------------------
 // Task 8 — Adopted cats, using your own functions as callbacks
 // ---------------------------------------------------------------------------
+const adoptedCatNames = animals 
+.filter(isCat)
+.filter(isAdopted)
+.map(getName);
 
+console.log("Task 8 - Adopted Cats:", adoptedCatNames);
 // ---------------------------------------------------------------------------
 // Task 9 — Write makeSpeciesChecker (a closure)
 // ---------------------------------------------------------------------------
