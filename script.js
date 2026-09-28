@@ -51,7 +51,10 @@ console.log("Task 5 - Available Dogs:", availableDogNames);
 // ---------------------------------------------------------------------------
 // Task 6 — Average age with .reduce()
 // ---------------------------------------------------------------------------
+const totalAge = animals.reduce((sum, animal)m => sum = animal.age, 0);
+const averageAge = totalAge / animals.length;
 
+console.log("Task 6 - Average Age:", averageAge);
 // ---------------------------------------------------------------------------
 // Task 7 — Write isCat, isAdopted, and getName
 // ---------------------------------------------------------------------------
