@@ -58,7 +58,17 @@ console.log("Task 6 - Average Age:", averageAge);
 // ---------------------------------------------------------------------------
 // Task 7 — Write isCat, isAdopted, and getName
 // ---------------------------------------------------------------------------
+function isCat(animal) {
+  return animal.species === "cat";
+}
 
+function isAdopted(animal) {
+  return animal.adopted;
+}
+
+function getName(animal) {
+  return animal.name;
+}
 // ---------------------------------------------------------------------------
 // Task 8 — Adopted cats, using your own functions as callbacks
 // ---------------------------------------------------------------------------
