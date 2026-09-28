@@ -43,7 +43,11 @@ console.log("Task 4 - Available:", availibleAnimals);
 // ---------------------------------------------------------------------------
 // Task 5 — Available dogs with method chaining
 // ---------------------------------------------------------------------------
+const availableDogNames = animals
+  .filter(animal => animal.species === "dog" && !animal.adopted)
+  .map(animal => animal.name);
 
+console.log("Task 5 - Available Dogs:", availableDogNames);
 // ---------------------------------------------------------------------------
 // Task 6 — Average age with .reduce()
 // ---------------------------------------------------------------------------
