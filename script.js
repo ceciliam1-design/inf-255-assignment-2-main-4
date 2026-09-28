@@ -89,3 +89,11 @@ function makeSpeciesChecker(targetSpecies) {
 // ---------------------------------------------------------------------------
 // Task 10 — Build isDog and isRabbit, then log their names
 // ---------------------------------------------------------------------------
+const isDog = makeSpeciesChecker("dog");
+const isRabbit = makeSpeciesChecker("rabbit");
+
+const dogNames = animal.filter(isDog).map(getName);
+const rabbitNames = animals.filter(isRabbit.map(getName);
+
+console.log("Task 10 - Dog Names:", dogNames);
+console.log("Task 10 - Rabbit Names:", rabbitNames);
