@@ -81,7 +81,11 @@ console.log("Task 8 - Adopted Cats:", adoptedCatNames);
 // ---------------------------------------------------------------------------
 // Task 9 — Write makeSpeciesChecker (a closure)
 // ---------------------------------------------------------------------------
-
+function makeSpeciesChecker(targetSpecies) {
+  return function(animal) {
+    return animal.species === targetSpecies;
+  };
+}
 // ---------------------------------------------------------------------------
 // Task 10 — Build isDog and isRabbit, then log their names
 // ---------------------------------------------------------------------------
